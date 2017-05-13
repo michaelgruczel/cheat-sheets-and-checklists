@@ -81,12 +81,12 @@ simpliest solution is postfix (will be installed at  /usr/sbin/sendmail)
 ## copy files to/from server
 
     # scp [source] [destination]
-    #
+    
     # copy to another host
     # scp [/path/to/local/file] [remote-username]@[remote-hostname]:[/path/to/remote/file]
     # e.g. 
     scp test.tar.gz username@hostname.example.com:/home/username/testfolder/
-    #
+    
     # copy from another host
     scp username@hostname.example.com:/home/username/testfolder/test.tar.gz test.tar.gz 
 
@@ -266,20 +266,20 @@ simpliest solution is postfix (will be installed at  /usr/sbin/sendmail)
 
 ## tar
 
-   # tar
-   tar -z -cvf /.../...tar.gz -C /aFolder
+    # tar
+    tar -z -cvf /.../...tar.gz -C /aFolder
 
-   # list content
-   tar -tzf /../...tar.gz   
+    # list content
+    tar -tzf /../...tar.gz   
 
-   # untar
-   tar -xzf /.../...tar.gz
+    # untar
+    tar -xzf /.../...tar.gz
 
-   # -c --- create
-   # -v --- verbose
-   # -f --- file 
-   # -z --- put the file though gzip or use gunzip on the file first.
-   # -x --- extract the files from the tarball.
+    # -c --- create
+    # -v --- verbose
+    # -f --- file 
+    # -z --- put the file though gzip or use gunzip on the file first.
+    # -x --- extract the files from the tarball.
 
 ## se linux
 
@@ -322,11 +322,9 @@ Security Enhanced Linux (SELinux) enhancements developed by the US Federal Natio
 
 ## cron
 
-
     # edit crontabs
     crontab -e
     # e.g. 5 4 * * sun echo "run at 5 after 4 every sunday"
-
 
     # list crontabs
     crontab -l  
